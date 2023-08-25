@@ -1,0 +1,62 @@
+<html>
+<head>
+<TITLE>Colsalud IPS</TITLE>
+<LINK rel="stylesheet" href="Style.css">
+<h1 style="color:black"><center>Solicitud de citas - Colsalud IPS  <IMG SRC="IMG/LOGO.jpg" style="width:50px;height:50px"></IMG></center></h1>
+</head>
+<ul class="navbar">
+<li><a href="Principal.html">Principal</a><li>Solicitar una cita<li><a href= "Dependencias.html">Directorio de dependencias</a>
+</ul>
+<hr width=70%  align="center">
+
+<form>
+<fieldset class="fieldset";
+style="border:1,5px gray">
+<legend><b>Datos b&aacute;sicos del paciente</b></legend>
+<p><label>Tipo de documento: <input type=radio name=size> RC </label> <label><input type=radio name=size> TI </label> <label><input type=radio name=size> CC </label> <label><input type=radio name=size> CE </label></p>
+<p><label>Nombre completo: <input class="info"></label>&nbsp;&nbsp;&nbsp;<label>Primer apellido: <input class="info"></label>&nbsp;&nbsp;&nbsp;<label>Segundo apellido: <input class="info"></label></p>
+<p><label>Direcci&oacute;n: <input class="address"></label>&nbsp;&nbsp;&nbsp;<label>Teléfono fijo: <input class="info" type="tel"></label>&nbsp;&nbsp;&nbsp;<label>Celular: <input class="info" type="tel"></label></p>
+<p><label>Correo electr&oacute;nico: <input class="address" type="email"></label></p>
+</fieldset>
+
+<fieldset class="fieldset";
+style="border:1,5px gray">
+<legend><b>Datos del asegurador</b></legend> 
+<label>Regimen: </label>
+<select name="Regimen" id="Regimen">
+        <option value="Contributivo">Contributivo</option>
+        <option value="Subsidiado">Subsidiado</option>
+        <option value="Especial">Especial o de Excepción</option>
+        <option value="Poliza">Poliza</option>
+        <option value="Vinculado">Vinculado</option>
+ </select>
+<label>Rango: </label>
+<select name="Rango" id="Rango">
+        <option value="Contributivo A">Contributivo A</option>
+        <option value="Contributivo B">Contributivo B</option>
+        <option value="Contributivo C">Contributivo C</option>
+        <option value="Subsidiado N0">Subsidiado N0</option>
+        <option value="Subsidiado N1">Subsidiado N1</option>
+        <option value="Subsidiado N2">Subsidiado N2</option>
+      </select> 
+<label>Entidad Responsable de Pago: </label>
+<select name="Entidad Responsable de Pago" id="ERP">
+        <option value="Sura">EPS Suramericana</option>
+        <option value="Savia">Alianza Medellin Antioquia Savia Salud</option>
+        <option value="Saludtotal">Salud Total</option>
+        <option value="Nueva">Nueva Promotora de Salud Nueva EPS</option>
+        <option value="Redvital">Magisterio - RedVital UT</option>
+ </select>
+ <p><label>Tipo de afiliado: <input type=radio name=size> Cotizante </label><label><input type=radio name=size> Beneficiario </label></p>
+ </fieldset>
+ 
+<fieldset class="fieldset";
+style="border:1,5px gray">
+<legend><b>Fecha solicitada</b></legend>
+<p><label>Fecha: <input type="date"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Hora: <input type="time"></label>
+</fieldset>
+ <br>
+<div class="center"><button onClick="alert('Cita registrada exitosamente');">Grabar registro</button></div>
+</form>
+
+</html>
